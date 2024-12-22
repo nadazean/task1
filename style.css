@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container{
+    width: 85%;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+/*navbar*/
+a{
+    text-decoration: none;
+    color: White;
+}
+ul{
+    list-style: none;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    background-color: transparent;
+    height: 70px;
+    width: 100%;
+}
+.navbar .row{
+    justify-content: space-between;
+}
+.navbar .logo{
+    font-family: 'Alata', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    color: white;
+    padding: 5px;
+    margin-left: 30px;
+}
+.navbar .list ul{
+  display: flex;    
+  margin-right: 40px;
+  padding-top: 30px;
+}
+.navbar .list  ul li a{
+   margin-right: 25px ;
+   text-transform: capitalize;
+   font-family: 'Alata', sans-serif;
+   font-size: 15px;
+   font-weight: 200;
+   color: white;
+   transition: .5s;
+}
+.navbar .list  ul li a:hover{
+     text-decoration:underline;
+}
+ /*header */
+ .header{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('imag/image-hero.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+ }
+ .header .header-content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content:flex-start;
+    justify-content: center;
+    height: 100vh;
+   
+ }
+ .header .header-content h1{
+    color:white;
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size:60px;
+    letter-spacing: 3px;
+    width: 40%;
+    border: 3px solid white;
+    padding: 20px;
+    margin-top: 20px;
+    
+}
+/*about*/
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 10%;
+   margin-top: 40px;
+    background-color: #fff;
+}
+.about .about-img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;  
+    position: relative;
+    left: 20px;
+}
+.about .about-text{
+    width: 600px;
+    height: 50vh;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    position: absolute;
+    left: 49%;
+    bottom: -90%;
+    padding: 50px;
+    margin: 20px auto;
+}
+.about .about-text h1{
+    padding: 20px;
+     text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 350;
+    font-size:35px;
+    letter-spacing: 3px;
+    color: #000;
+}
+.about .about-text p{
+
+    width: 95%;
+    font-size: 17px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #555;
+ 
+}
+/*creations*/
+.creations{
+    margin-top: 6%;
+    margin-bottom: 5%;
+}
+.creation-titel{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5%;
+}
+.creation-titel .row{
+    justify-content: space-between;
+}
+.creation-titel .title h1{
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size:45px;
+    letter-spacing: 3px;
+    padding: 5px;
+    margin-left:15%;
+    width: 100%;
+}
+.creation-titel .btn{
+    background-color: #000;
+    color: #fff;
+    margin-right: 7.9% ;
+    width: 12%;
+    height: 6vh;
+    text-transform: uppercase;
+    font-family: 'Alata', sans-serif;
+    font-weight: 300;
+    font-size:15px;
+    letter-spacing: 4px;
+}
+.creation-titel .btn:hover{
+    border:1px  solid #000;
+    color: #000;
+    background-color: #fff;
+}
+.creations .creations-item{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   justify-content: space-between;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    padding: 10px;
+    max-width: 85%; 
+    margin: auto; 
+}
+
+.card {
+    background-size: cover;
+    background-position: center;
+    flex: 1 1 calc(25% - 20px); 
+    margin: 10px;
+    height: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    color: white;
+    overflow: hidden;
+}
+.cards-container .card p{
+    padding: 10px ;
+    margin: 0;
+    position: absolute;
+    left:50px ;
+    bottom: 30px;
+    width: 55%;
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size:25px;
+    letter-spacing: 3px;
+    color:white;
+}
+
+.cards-container .overlay {
+    width: 256px;
+    position: absolute;
+    top: 0;
+    left:20px;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0); 
+    transition: background-color 0.3s ease;
+    z-index: 0; 
+}
+
+/* hover */
+.card:hover .overlay {
+    background-color: hsl(0, 0%, 100%); 
+    opacity: 0.8; 
+}
+.card:hover p {
+    color: #000000; 
+}
+/* footer */
+
+.footer{
+    background-color:rgb(1, 1, 1);
+    padding: 25px 0;
+    font-size: 20px;
+}
+.footer .row{
+    justify-content: space-between;
+}
+.footer ul{
+    display: flex;    
+    padding-top: 30px;
+  }
+.footer ul li a{
+    margin-right: 25px ;
+    text-transform: capitalize;
+    font-family: 'Alata', sans-serif;
+    font-size: 15px;
+}
+.footer .logof .logoff{
+    font-family: 'Alata', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    color: white;
+    padding: 5px;
+  
+}
+.footer .logof{
+    margin-left: 30px;
+}
+.footer ul li a:hover{
+    text-decoration:underline;
+}
+.footer .iconf .icon{
+   color: #fff;
+   display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.footer .iconf .icon:hover{
+    text-decoration:underline;
+}
+.footer .iconf .copy{
+    color: #555;
+    display: flex;    
+    padding-top: 30px;
+}
+/* Responsive Styles for Mobile and Tablets */
+@media screen and (max-width: 1024px) {
+    .navbar .list ul {
+        padding-top: 10px;
+        margin-right: 10px;
+    }
+
+    .navbar .logo {
+        font-size: 30px;
+    }
+
+    .header .header-content h1 {
+        font-size: 45px;
+        width: 70%;
+    }
+
+    .about {
+        padding: 30px 5%;
+    }
+
+    .about .about-img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .about .about-text {
+        width: 100%;
+        position: relative;
+        bottom: 0;
+        margin-top: 20px;
+    }
+
+    .creation-titel .title h1 {
+        font-size: 35px;
+        margin-left: 0;
+    }
+
+    .cards-container .card {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .footer .iconf .icon {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar .list ul {
+        display: none;
+    }
+
+    .navbar .logo {
+        font-size: 25px;
+    }
+
+    .header .header-content h1 {
+        font-size: 35px;
+        width: 80%;
+    }
+
+    .cards-container .card {
+        flex: 1 1 calc(100% - 20px);
+    }
+
+    .footer .iconf .icon {
+        justify-content: center;
+    }
+}
